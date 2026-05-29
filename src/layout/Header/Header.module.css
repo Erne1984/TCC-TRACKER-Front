@@ -1,0 +1,22 @@
+.header_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 2rem;
+  min-height: 72px;
+
+  background-color: #EBEBEB;
+}
+
+.logo_container {
+  display: flex;
+  align-items: center;
+}
+
+.logo_container img {
+  height: 40px;
+  width: auto;
+  display: block;
+}

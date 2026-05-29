@@ -9,7 +9,7 @@
 
     background-image:
         linear-gradient(rgba(0,0,0,0.18), rgba(0,0,0,0.18)),
-        url("../assets/background_login.webp");
+        url("../../assets/background_login.webp");
 
     background-size: cover;
     background-position: center;
