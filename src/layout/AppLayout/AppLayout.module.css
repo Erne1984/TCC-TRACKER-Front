@@ -1,0 +1,19 @@
+.container {
+  display: grid;
+  grid-template-columns: 60px 1fr 280px;
+  min-height: calc(100vh - 70px);
+}
+
+.sidebar {
+  border-right: 1px solid #ddd;
+  background-color: #EBEBEB;
+}
+
+.content {
+  padding: 2rem;
+}
+
+.rightPanel {
+  border-left: 1px solid #ddd;
+  padding: 1rem;
+}

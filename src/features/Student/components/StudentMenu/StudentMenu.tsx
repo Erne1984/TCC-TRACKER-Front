@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { User } from "lucide-react";
 
-import { useUserMenu } from "../hooks/useUserMenu";
+import { useUserMenu } from "../../hooks/useUserMenu";
 import styles from "./StudentMenu.module.css";
 
 

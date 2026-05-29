@@ -1,0 +1,35 @@
+.itens_container {
+  margin-top: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+}
+
+.item_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-decoration: none;
+  color: #666;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.item_container p {
+  font-size: var(--font-size-esm);
+  font-weight: lighter;
+}
+
+.active {
+  color: #c70000;
+}
+
+.active svg {
+  stroke: #c70000;
+}

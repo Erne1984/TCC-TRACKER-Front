@@ -2,7 +2,9 @@ import { createBrowserRouter } from "react-router-dom";
 
 import { LoginPage } from "../pages/Login/LoginPage";
 import { NotFoundPage } from "../pages/NotFoundPage";
-import { StudentPage } from "../pages/Student/StudentPage";
+import { StudentLayout } from "../pages/Student/StudentLayout";
+import { StudentGroupsPage } from "../pages/Student/StudentGroupsPage";
+import { StudentTasksPage } from "../pages/Student/StudentTasksPage";
 
 export const router = createBrowserRouter([
   {
@@ -10,10 +12,24 @@ export const router = createBrowserRouter([
     element: <LoginPage />,
   },
 
-  {
+ {
     path: "/student/:id",
-    element: <StudentPage />,
-  },
+    element: <StudentLayout />,
+    children: [
+      {
+        index: true,
+        element: <StudentGroupsPage />,
+      },
+      {
+        path: "groups",
+        element: <StudentGroupsPage />,
+      },
+      {
+        path: "tasks",
+        element: <StudentTasksPage />,
+      },
+    ]
+    },
 
   {
     path: "*",
